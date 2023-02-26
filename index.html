@@ -1,0 +1,329 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+
+
+    :root {
+      --primary: #094b65;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      overflow-x: hidden;
+      background: #fff;
+      min-height: 100vh;
+      background-image: linear-gradient( #1CB5E0 ,#094b65);
+    }
+
+    #header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 30px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+
+    #header .logo {
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 2em;
+      text-decoration: none;
+    }
+
+    #header ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #header ul li {
+      list-style: none;
+      margin-left: 20px;
+    }
+
+    #header ul li a {
+      text-decoration: none;
+      padding: 6px 15px;
+      color: var(--primary);
+      border-radius: 20px;
+    }
+
+    #header ul li a:hover,
+    #header ul li a.active {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    section {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    section::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(to top, var(--primary), transparent);
+      z-index: 10;
+    }
+
+    section img {
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    section #text {
+      position: absolute;
+      color: #ffffff;
+      font-size: 10vw;
+      text-align: center;
+      line-height: .55em;
+      font-family: 'Rancho', cursive;
+      transform: translatey(-50%);
+    }
+
+    section #text span {
+      font-size: .20em;
+      letter-spacing: 2px;
+      font-weight: 400;
+    }
+
+    #btn {
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 30px;
+      background: #fff;
+      color: var(--primary);
+      font-size: 1.2em;
+      font-weight: 500;
+      letter-spacing: 2px;
+      border-radius: 40px;
+      transform: translatey(100px);
+    }
+
+    .text {
+      position: relative;
+      padding: 100px;
+      color: #094b65
+    }
+
+    .text h2 {
+      font-size: 3.5em;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .text p {
+      font-size: 1em;
+      color: #fff;
+    }
+
+    footer {
+      position: relative;
+      padding: 0px 100px;
+      background: #e4ac84;
+      background-image: url("wallpaper.jpg");
+    }
+
+    footer a {
+      text-decoration: none;
+      color: #fff;
+    }
+    Serif
+    {
+      height: 100vh;
+      margin: 0;
+
+      padding: 0;
+
+      overflow-x: hidden;
+
+    }
+
+
+    #background-wrap {
+      bottom: 0;
+      left: 0;
+      padding-top: 50px;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
+    /* Rounded border */
+    hr.rounded {
+      border-top: 4px solid var(--primary);
+
+    }
+    .species{
+      font-size: 2em;
+      color: var(--primary)
+      margin-bottom: 10px;
+      font-weight: lighter;t
+    }
+    .image{
+      float: left;
+    }
+    .range{
+      float: left ;
+    }
+
+
+
+
+  </style>
+  <script src="birds.js"></script>
+</head>
+<body>
+<header id="header">
+  <a href="#" class="logo">Trees</a>
+  <ul>
+    <li><a href="#" class="active">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Destination</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</header>
+
+
+<Section>
+  <img src="forest.png" id="forest" alt="">
+  <h2 id="text"><span> </span><br>Go Wild</h2>
+
+  <img src="rock.png" id="rock">
+  <img src="water.png" id="water">
+</Section>
+
+<div class="text">
+  <h2>Earths Forests </h2>
+  <p>Understanding the environment, particularly forests and their inhabitants, is of paramount importance for both individuals and society as a whole. Forests are the cornerstone of the planet's ecosystem, providing homes to countless species and generating oxygen while absorbing carbon dioxide. They also serve as a vital resource for humanity, providing wood, medicine, and other commodities.
+
+    Learning about forests and the creatures that live within them is critical for comprehending and valuing the delicate equilibrium of nature. By studying the relationships between various species and how forests respond to changes in the environment, we can cultivate a profound appreciation for the natural world and the essential role each creature plays in preserving its vitality and sustainability.
+
+    In addition to deepening our understanding of nature, learning about forests and their inhabitants can also enable us to address critical environmental challenges. Forests have become increasingly crucial in the face of global climate change, as they are an essential tool for mitigating carbon emissions. By studying the way forests absorb and store carbon, we can gain a better understanding of how to safeguard and conserve these crucial ecosystems.
+
+    Moreover, exploring forests can also assist us in developing more sustainable approaches for utilizing forest resources. By comprehending how different species interact with one another and with their surroundings, we can make more informed decisions and employ more environmentally friendly practices to ensure that forests continue to provide valuable resources for generations to come.
+
+    In summary, learning about the environment, particularly forests and the creatures in it, is vital for understanding and appreciating the natural world, addressing pressing environmental issues, and developing sustainable practices that preserve the health of our planet. </p>
+  <br><br>
+<hr>
+<h2> Organisms that live
+  in deciduous forests </h2>
+  <hr>
+  <div class="species">
+    <p> Avian Species</p>
+  </div>
+
+  <p> Forests around the world are a paradise for bird enthusiasts, offering a wide variety of habitats that provide homes to countless bird species. Forests provide a diverse range of habitats, including mountains, plains, and wetlands, making them an ideal location for both native and migratory birds. Forests are also a popular destination for birdwatchers from around the globe. From the mighty Bald Eagle to the colorful Painted Bunting, forests host a remarkable array of avian species. Whether you're an avid birder or simply appreciate the beauty of these feathered creatures, forests are a must-visit destination for bird lovers.</p>
+  <br><br>
+  <div class="species">
+    <p> Small Birds</p>
+  </div>
+ <<div class="image"><img src="robin.webp"></div>
+  <div class="range"><img src="robin-range.webp" alt=""></div>
+  <p>Robins: Robins are  scientifically known as Turdus migratorius, are a migratory bird species that belong to the thrush family. These birds are renowned for their bright orange-red breasts, which contrast with their grayish-brown feathers and white underparts. They are commonly found throughout North America, from Alaska to Mexico, and are particularly active during the breeding season, which occurs from March to July.
+
+    Robins are an important ecological species, playing a significant role in seed dispersal and insect control. They consume various insects, including beetles, caterpillars, and earthworms, which are harmful to gardens and crops. Moreover, they also aid in seed distribution by consuming and dispersing the seeds of numerous plants, including blueberries, elderberries, and holly.
+
+    Robins typically build their nests on tree branches, where they lay blue-green eggs that hatch after approximately two weeks. The hatchlings are altricial, meaning they require substantial care and attention from their parents before fledging.
+
+    Although robins are a common sight in suburban areas, they are susceptible to environmental threats, such as habitat loss, climate change, and pesticide exposure. Therefore, it is essential to protect these iconic birds and preserve their habitats to ensure their survival for future generations to enjoy.</p>
+
+  <iframe src="https://macaulaylibrary.org/asset/168300/embed" height="384" width="640" frameborder="0" allowfullscreen></iframe>
+<hr>
+
+  <div class="image"><img src="bluebird.webp"></div>
+  <div class="range"><img src="bluebird range.webp"></div>
+  <p>The Eastern Bluebird (Sialia sialis) is a fascinating species with a unique set of adaptations that allow it to thrive in its North American habitat. These birds are commonly found in open woodlands, meadows, and farmland, where they feed on insects and berries. They have a specialized beak that is short and curved, which allows them to easily pluck insects from the ground.
+
+    S. sialis have a complex system of communication, including a wide range of vocalizations and body language. They use these communication methods to establish territories and warn others of potential danger. Their bright colors also play a role in communication, as males use their vibrant blue plumage to attract mates and establish dominance over other males.
+
+    Interestingly, S. sialis have been observed engaging in a behavior called "anting," where they rub ants on their feathers. It is believed that this behavior helps to keep the birds free of parasites, as the formic acid produced by the ants acts as a natural insecticide.
+
+    S. sialis have faced numerous challenges in recent decades, including habitat loss, pesticides, and competition from non-native species. However, conservation efforts have helped to stabilize their populations. One such effort involves the installation of nest boxes, which provide suitable nesting sites and have been shown to increase the number of breeding pairs. S. sialis serves as an important indicator species for the health of North American ecosystems and continues to be a beloved sight for bird enthusiasts and casual observers alike.
+    <br><br>
+    <iframe src="https://macaulaylibrary.org/asset/538312091/embed" height="384" width="640" frameborder="0" allowfullscreen></iframe>
+  </p>
+<hr>
+
+  <div class="image"><img src="oriole.webp"></div>
+  <div class="range"><img src="oriole range.webp"></div>
+  <p>The Baltimore Oriole (Icterus galbula) is a medium-sized passerine bird native to North America. It is a member of the blackbird family and is known for its bright orange plumage and distinct black markings.
+
+    The male Baltimore Oriole has a striking appearance, with a bright orange head, back, and tail feathers. The wings and tail are black with white markings, and the bill is pointed and slightly curved. The female is less vibrant, with a duller orange-yellow plumage and a grayish-brown head and back.
+
+    The Baltimore Oriole feeds primarily on insects, fruit, and nectar. It is a skilled acrobat, maneuvering easily through tree canopies in search of food. Its song is a distinctive whistling melody consisting of a series of clear, musical notes.
+
+    Breeding typically occurs in late spring and early summer, with the female building a cup-shaped nest made of plant fibers, hair, and other materials. The nest is usually located in a tree, and the female lays 3-7 eggs, which she incubates for about two weeks. The young birds are fed by both parents and leave the nest after about two weeks.
+
+    The Baltimore Oriole is a migratory bird, spending the winter in Central and South America and returning to North America in the spring to breed. It is a common sight in wooded areas, parks, and gardens throughout its range, and its bright plumage and cheerful song make it a favorite among birdwatchers and nature enthusiasts.
+    <br><br>
+    <iframe src="https://macaulaylibrary.org/asset/537493421/embed" height="384" width="640" frameborder="0" allowfullscreen></iframe>
+  </p>
+<hr>
+  <div class="image"><img src="cardinal.webp"></div>
+  <div class="range"><img src="cardinal range.webp"></div>
+  <p> The Northern Cardinal (Cardinalis cardinalis) is a medium-sized songbird that is native to North America. The male has a bright red plumage with a crest on its head, while the female has a more muted brownish-red coloration with a crest as well. Both sexes have distinctive black masks around their eyes and beaks that are shaped like cones.
+
+    Northern Cardinals are primarily seed-eaters and feed on a variety of seeds including sunflower, safflower, and thistle. They also consume fruits, insects, and occasionally feed on other bird's eggs or nestlings. Their breeding season varies by location, but typically occurs from March to September. During this time, the male will sing to attract a mate and defend his territory from other males.
+
+    These birds are monogamous and form strong pair bonds. The female will lay 2-4 eggs in a nest made of twigs, leaves, and grasses. Both parents share the responsibility of incubating the eggs and feeding the chicks once they hatch. The chicks fledge after about 10-11 days and are dependent on their parents for several more weeks before becoming independent.
+
+    Northern Cardinals are found throughout much of the eastern and central United States, as well as parts of Canada, Mexico, and Central America. They prefer woodland edges, gardens, and suburban areas with bushes and shrubs. Despite their bright coloration, they are able to hide among the foliage and are often heard before they are seen.
+    <br><br>
+    <iframe src="https://macaulaylibrary.org/asset/539512441/embed" height="384" width="640" frameborder="0" allowfullscreen></iframe>
+  </p>
+  <hr>
+
+  <div class="image"><img src="dove.webp"></div>
+  <div class="range"><img src="dove range.webp"></div>
+  <p>The Mourning Dove (Zenaida macroura) is a medium-sized, plump bird with a small head and a long, pointed tail. It is a member of the dove family and is found throughout North and Central America, as well as the Caribbean.
+
+    Mourning Doves have a distinctive, gentle cooing call that is often heard in the morning and evening hours. Their feathers are predominantly light brown with dark spots, and they have a black spot on their necks which gives them a distinctive appearance. They have small, round heads and their eyes are surrounded by a ring of bare skin which is colored blue-grey.
+
+    Mourning Doves primarily feed on seeds, but they also consume small amounts of insects and fruit. They are ground feeders and are commonly found on open ground or on low perches, such as fence posts or power lines.
+
+    Mourning Doves are monogamous and typically mate for life, but they may choose a new mate if their partner dies. They typically breed in the spring and summer months and build their nests in trees, shrubs, or on man-made structures. Their nests are made of twigs, grasses, and other plant materials.
+
+    Mourning Doves have a lifespan of 1 to 2 years in the wild, but can live up to 5 years in captivity. They are a popular game bird and are hunted for sport and food. However, they are also protected by the Migratory Bird Treaty Act in the United States, which makes it illegal to hunt, capture, or kill them without a permit.
+
+    Overall, the Mourning Dove is a common and well-known bird that is beloved for its gentle cooing call and peaceful demeanor. Its presence is often seen as a symbol of peace and hope, and it is a familiar sight in parks, gardens, and other outdoor spaces throughout its range.
+    <br><br>
+    <iframe src="https://macaulaylibrary.org/asset/538694501/embed" height="384" width="640" frameborder="0" allowfullscreen></iframe>
+  </p>
+
+
+
+
